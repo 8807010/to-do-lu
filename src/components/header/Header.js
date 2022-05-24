@@ -1,11 +1,11 @@
 import React from 'react';
 import './Header.css';
 
-export default function Header() {
+export default function Header({liked, allPosts}) {
     return (
         <div className='app-header d-flex'>
             <h1>Artiom Sokolov</h1>
-            <h2>5 записей, из них понравилось 0</h2>
+            <h2>{allPosts} записей, из них понравилось {liked}</h2>
         </div>
     )
 }
